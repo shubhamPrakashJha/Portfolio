@@ -1,92 +1,110 @@
 * {
     box-sizing: border-box;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 figure, img, section{
     max-width: 100%;
     margin: 0;
 }
 
-body{
+/*Header stylel*/
+header h1{
+    margin-bottom: 0;
+    font-size: xx-large;
+    color: #2d3c49;
+    font-weight: 100;
+}
 
+header h3, h3{
+    margin-top: 0;
+    font-size: medium;
+    color: #2d3c49;
+    font-weight: bolder;
 }
-aside{
-    width: 15%;
-    float: right;
+
+.header{
+    display: inline-flex;
+    flex-wrap: wrap;
+    height: 100px;
+    width: 100%;
 }
-aside img{
-    width:100px;
-    height:100px;
-    position: relative;
-    top:167px;
-    left: 25%;
+
+.logo{
+    width: 20%;
+    order: 1;
 }
-main{
-    width: 85%;
-    float: right;
-}
-@media screen and (max-width: 1024px){
-    main{
-        width: 100%;
-    }
-    aside{}
-}
-.container{
-    padding: 100px;
-}
-.header__title{
-    display: inline-block;
-    width:70%;
-    float: right;
+
+.name{
+    width: 80%;
+    order:2;
     text-align: right;
 }
-.header{
-    height: 150px;
-}
+
 .header_subtitle{
     display: inline-block;
-    width: 70%;
     float: right;
     text-align: right;
 }
-@media screen and (max-width: 617px){
-    .header__logo{
-        display: none;
+@media screen and (max-width: 425px){
+    .header_subtitle{
+        font-size: small;
     }
     .header__title{
-        width:100%;
+        font-size: x-large;
+    }
+    .projects{
+        font-size: inherit;
+    }
+}
+hr{
+    border-width: 2px;
+    border-style: solid;
+    border-color: #7d97ad
+}
+
+article h3{
+    color: #7d97ad;
+    margin-bottom: 8px;
+    font-size: xx-large;
+    font-weight: initial;
+}
+
+.container{
+    display: inline-block;
+    float: left;
+}
+
+.box{
+    width:100%;
+    text-align: center;
+    padding: 1px;
+}
+
+
+@media screen and (min-width: 425px){
+    .container{
+        display: inline-flex;
+        flex-wrap: wrap;
+    }
+
+    .box{
+        height:150px;
+        width:33.33%;
         text-align: center;
     }
-    .header_subtitle{
-        width:100%;
-        text-align: center;
-    }
+
 }
 .header__logo{
     position: relative;
     top: auto;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     float: left;
 }
 hr{
     width: 100%;
 }
-.left{
-    float: left;
-}
 
-.project{
-    display: inline-block;
-    width: 400px;
-    max-width: 100%;
-    height: inherit;
-    margin: 2px;
-    float: left;
-}
 .main_picture{
     width: 100%;
-}
-figcaption{
-    text-align: center;
 }
