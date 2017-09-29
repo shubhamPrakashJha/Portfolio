@@ -1,9 +1,79 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+figure, img, section{
+    max-width: 100%;
+    margin: 0;
+}
+
 body{
 
 }
 aside{
-
+    width: 15%;
+    float: left;
 }
 main{
+    width: 85%;
+    float: left;
+}
+.container{
+    padding: 100px;
+}
+.header__title{
+    display: inline-block;
+    width:70%;
+    float: right;
+    text-align: right;
+}
+.header{
+    height: 150px;
+}
+.header_subtitle{
+    display: inline-block;
+    width: 70%;
+    float: right;
+    text-align: right;
+}
+@media screen and (max-width: 7px){
+    .header__logo{
+        display: none;
+    }
+    .header__title{
+        width:100%;
+        text-align: center;
+    }
+    .header_subtitle{
+        width:100%;
+        text-align: center;
+    }
+}
+.header__logo{
+    position: relative;
+    top: auto;
+    width: 150px;
+    height: 150px;
+    float: left;
+}
+hr{
+    width: 100%;
+}
+.left{
+    float: left;
+}
 
+.project{
+    display: inline-block;
+    width: 400px;
+    max-width: 100%;
+    height: inherit;
+    margin: 2px;
+    float: left;
+}
+.main_picture{
+    width: 100%;
+}
+figcaption{
+    text-align: center;
 }
