@@ -2,6 +2,14 @@
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
 }
+@media screen and (min-width: 1024px){
+    body{
+        width: 1024px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 8px;
+    }
+}
 figure, img, section{
     max-width: 100%;
     margin: 0;
@@ -39,7 +47,9 @@ header h3, h3{
     order:2;
     text-align: right;
 }
-
+.projects{
+    font-size: x-large;
+}
 .header_subtitle{
     display: inline-block;
     float: right;
@@ -107,4 +117,17 @@ hr{
 
 .main_picture{
     width: 100%;
+}
+figcaption{
+    line-height: 1px;
+    color: #2d3c49;
+    font-weight: 100;
+}
+figcaption h1{
+    font-weight: normal;
+}
+a{
+    text-decoration: none;
+    color: #000;
+    font-size: small;
 }
