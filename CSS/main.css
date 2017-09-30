@@ -126,6 +126,10 @@ figcaption{
 figcaption h1{
     font-weight: normal;
 }
+
+figcaption p{
+  font-size: x-small;
+}
 a{
     text-decoration: none;
     color: #000;
