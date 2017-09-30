@@ -91,7 +91,7 @@ article h3{
 }
 
 
-@media screen and (min-width: 425px){
+@media screen and (min-width: 768px){
     .container{
         display: inline-flex;
         flex-wrap: wrap;
@@ -128,7 +128,7 @@ figcaption h1{
 }
 
 figcaption p{
-  font-size: x-small;
+  font-size: 70%;
 }
 a{
     text-decoration: none;
