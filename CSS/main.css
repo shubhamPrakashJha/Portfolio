@@ -130,3 +130,7 @@ a{
     color: #000;
     font-size: small;
 }
+footer p{
+  text-align: center;
+  font-size: small
+}
