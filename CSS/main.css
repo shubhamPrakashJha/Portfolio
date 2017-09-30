@@ -24,10 +24,10 @@ header h1{
 }
 
 header h3, h3{
-    margin-top: 0;
-    font-size: medium;
     color: #2d3c49;
+    font-size: medium;
     font-weight: bolder;
+    margin-top: 0;
 }
 
 .header{
@@ -109,6 +109,7 @@ article h3{
     width: 100px;
     height: 100px;
     float: left;
+    padding: 7%;
 }
 hr{
     width: 100%;
