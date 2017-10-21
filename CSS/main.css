@@ -1,4 +1,4 @@
-* {
+*{
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
 }
@@ -67,9 +67,7 @@ header h3, h3{
     }
 }
 hr{
-    border-width: 2px;
-    border-style: solid;
-    border-color: #7d97ad
+    border: 2px solid #7d97ad;
 }
 
 article h3{
@@ -88,6 +86,7 @@ article h3{
     width:100%;
     text-align: center;
     padding: 1px;
+    margin-bottom: 10px;
 }
 
 
@@ -118,16 +117,16 @@ hr{
 .main_picture{
     width: 100%;
 }
-figcaption{
+.info{
     line-height: 1px;
     color: #2d3c49;
     font-weight: 100;
 }
-figcaption h1{
+.info h2{
     font-weight: normal;
 }
 
-figcaption p{
+.info p{
   font-size: 70%;
 }
 a{
