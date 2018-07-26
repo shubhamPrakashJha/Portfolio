@@ -89,13 +89,30 @@ $(function () {
     var controller = {
         init: function () {
             view.init();
+        },
+        getProjects: function () {
+            return model.projects.projects;
         }
     };
     var view = {
         init: function () {
+            this.projectContainer = $(".container");
+            this.projectTemplate = $('script[data-template="projects"]').html();
             this.render();
         },
         render: function () {
+            var projectContainer = this.projectContainer,
+                projectTemplate = this.projectTemplate,
+                projects = controller.getProjects();
+
+            projects.forEach(function (project) {
+                console.log(project);
+                var newTemplate = projectTemplate.replace(/{{title}}/g,project.title).replace(/{{url}}/g,project.url).replace(/{{image}}/g,project.images).replace(/{{info}}/g,project.description);
+                console.log(newTemplate);
+                projectContainer.append(newTemplate);
+
+            });
+
             console.log("View Started");
         }
     };

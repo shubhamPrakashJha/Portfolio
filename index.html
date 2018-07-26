@@ -27,47 +27,26 @@
         </figure>
         <br>
         <h3 class="projects"> Featured Work</h3>
-        <div class="container">
-            <section class="box">
-                <figure>
-                    <a href="https://github.com/shubhamPrakashJha/MOVIE-TRAILER-DATABASE" target="_blank">
-                        <img src="image/Trailerdb.png" alt="project">
-                        <div class="info">
-                            <h2>MOVIE TRAILER WEBSITE</h2>
-                            <p>github.com/shubhamPrakashJha/MOVIE-TRAILER-DATABASE</p>
-                        </div>
-                    </a>
-                </figure>
-            </section>
-            <section class="box">
-                <figure>
-                    <a href="https://github.com/shubhamPrakashJha/SecretMessage" target="_blank">
-                        <img src="image/secretmsg.png" alt="Secret Message project image">
-                        <div class="info">
-                            <h2>SECRET MESSAGE</h2>
-                            <p>https://github.com/shubhamPrakashJha/SecretMessage</p>
-                        </div>
-                    </a>
-                </figure>
-            </section>
-            <section class="box">
-                <figure>
-                    <a href="https://github.com/shubhamPrakashJha/drawingShape" target="_blank">
-                        <img src="image/Turtle.png" alt="Painter turtle project image">
-                        <div class="info">
-                            <h2>PAINTER TURTLES</h2>
-                            <p>github.com/shubhamPrakashJha/drawingShape</p>
-                        </div>
-                    </a>
-                </figure>
-            </section>
-        </div>
+        <div class="container"></div>
         <hr>
     </article>
     <footer>
         <p>Contact me at <a href="mailto:prakash.shubhamjha@gmail.com">prakash.shubhamjha@gmail.com</a></p>
     </footer>
 </main>
+<script type="text/template" data-template="projects">
+    <section class="box">
+        <figure>
+            <a href="{{url}}" target="_blank">
+                <img src="{{image}}" alt="{{info}}">
+                <div class="info">
+                    <h2>{{title}}</h2>
+                    <p>{{url}}</p>
+                </div>
+            </a>
+        </figure>
+    </section>
+</script>
 
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/script.js"></script>
