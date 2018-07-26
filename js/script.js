@@ -61,9 +61,23 @@ $(function () {
                 {
                     title: "MOVIE TRAILER WEBSITE",
                     dates: "Sep 2017",
+                    url: "github.com/shubhamPrakashJha/MOVIE-TRAILER-DATABASE",
                     description: "",
                     images: "image/Trailerdb.png"
+                }, {
+                    title: "SECRET MESSAGE",
+                    dates: "Sep 2017",
+                    url: "https://github.com/shubhamPrakashJha/SecretMessage",
+                    description: "",
+                    images: "image/secretmsg.png"
+                }, {
+                    title: "PAINTER TURTLES",
+                    dates: "Sep 2017",
+                    url: "github.com/shubhamPrakashJha/drawingShape",
+                    description: "",
+                    images: "image/Turtle.png"
                 }
+
             ],
             display: function () {
 
