@@ -128,7 +128,6 @@ $(function () {
                 var newTemplate = projectTemplate.replace(/{{title}}/g,project.title).replace(/{{url}}/g,project.url).replace(/{{image}}/g,project.images).replace(/{{info}}/g,project.description);
                 // console.log(newTemplate);
                 projectContainer.append(newTemplate);
-
             });
 
 
