@@ -92,26 +92,45 @@ $(function () {
         },
         getProjects: function () {
             return model.projects.projects;
+        },
+        getBio: function () {
+            return model.bio;
         }
     };
     var view = {
         init: function () {
             this.projectContainer = $(".container");
+            this.header = $("header");
+            this.footer = $("footer");
             this.projectTemplate = $('script[data-template="projects"]').html();
+            this.headerTemplate = $('script[data-template="header"]').html();
+            this.footerTemplate = $('script[data-template="footer"]').html();
             this.render();
         },
         render: function () {
             var projectContainer = this.projectContainer,
+                header = this.header,
+                footer = this.footer,
                 projectTemplate = this.projectTemplate,
+                headerTemplate = this.headerTemplate,
+                footerTemplate = this.footerTemplate,
+                bio = controller.getBio(),
                 projects = controller.getProjects();
+
+            console.log(bio.name);
+            var newHeader = headerTemplate.replace(/{{name}}/g,bio.name).replace(/{{role}}/g,bio.role);
+            header.append(newHeader);
+            var newFooter = footerTemplate.replace(/{{email}}/g,bio.contacts.email);
+            footer.append(newFooter);
 
             projects.forEach(function (project) {
                 console.log(project);
                 var newTemplate = projectTemplate.replace(/{{title}}/g,project.title).replace(/{{url}}/g,project.url).replace(/{{image}}/g,project.images).replace(/{{info}}/g,project.description);
-                console.log(newTemplate);
+                // console.log(newTemplate);
                 projectContainer.append(newTemplate);
 
             });
+
 
             console.log("View Started");
         }

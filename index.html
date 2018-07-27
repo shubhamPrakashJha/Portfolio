@@ -11,15 +11,7 @@
 </head>
 <body>
 <main>
-    <header class="header">
-        <div class="header_box logo">
-            <img class="header-logo" src="image/logo.png" alt="iconic view of a cityscape">
-        </div>
-        <div class="header_box name">
-            <h1 class="header-title">SHUBHAM PRAKASH</h1>
-            <h3 class="header-subtitle">FULL-STACK WEB DEVELOPER</h3>
-        </div>
-    </header>
+    <header class="header"></header>
     <hr>
     <article>
         <figure>
@@ -30,10 +22,17 @@
         <div class="container"></div>
         <hr>
     </article>
-    <footer>
-        <p>Contact me at <a href="mailto:prakash.shubhamjha@gmail.com">prakash.shubhamjha@gmail.com</a></p>
-    </footer>
+    <footer></footer>
 </main>
+<script type="text/template" data-template="header">
+    <div class="header_box logo">
+        <img class="header-logo" src="image/logo.png" alt="iconic view of a cityscape">
+    </div>
+    <div class="header_box name">
+        <h1 class="header-title">{{name}}</h1>
+        <h3 class="header-subtitle">{{role}}</h3>
+    </div>
+</script>
 <script type="text/template" data-template="projects">
     <section class="box">
         <figure>
@@ -46,6 +45,9 @@
             </a>
         </figure>
     </section>
+</script>
+<script type="text/template" data-template="footer">
+    <p>Contact me at <a href="mailto:{{email}}">{{email}}</a></p>
 </script>
 
 <script src="js/jquery-3.3.1.min.js"></script>

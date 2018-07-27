@@ -52,6 +52,7 @@ section {
     width: 80%;
     order: 2;
     text-align: right;
+    text-transform: uppercase;
 }
 
 .header-title {
